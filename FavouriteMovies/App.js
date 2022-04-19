@@ -25,6 +25,8 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import {getTopMovies} from './api/omdbClient';
+import { Button } from 'react-native-paper';
 
 const Section = ({children, title}): Node => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -54,6 +56,7 @@ const Section = ({children, title}): Node => {
 
 const App: () => Node = () => {
   const isDarkMode = useColorScheme() === 'dark';
+  const [movies, setMovies] = React.useState('------------');
 
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
@@ -74,6 +77,12 @@ const App: () => Node = () => {
             Edit <Text style={styles.highlight}>App.js</Text> to change this
             screen and then come back to see your edits.
           </Section>
+          <Button
+            onPress={() => {
+              getTopMovies().then(response => console.log('Movies: ', response.data.Search));
+            }}
+          />
+          <Text style={styles.highlight}>Movies: {movies}</Text>
           <Section title="See Your Changes">
             <ReloadInstructions />
           </Section>
