@@ -18,7 +18,7 @@ import {
 import {getTopMovies, searchMovies} from './api/omdbClient';
 import {Button, TextInput} from 'react-native-paper';
 import MovieCard from './components/MovieCard';
-import {Divider} from './components/Divider';
+import Divider from './components/Divider';
 
 const App = () => {
   const [movies, setMovies] = React.useState([]);
@@ -47,7 +47,10 @@ const App = () => {
         <View>
           <Text style={styles.highlight}>Movies:</Text>
           {movies.map(movie => (
+            <>
             <MovieCard movie={movie} />
+            <Divider />
+            </>
           ))}
         </View>
       </ScrollView>

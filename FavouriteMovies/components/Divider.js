@@ -14,7 +14,7 @@ function Divider() {
 
 const styles = StyleSheet.create({
   divider: {
-    paddingBottom: hp('1%'),
+    paddingBottom: hp('0.3%'),
   }
 });
 
