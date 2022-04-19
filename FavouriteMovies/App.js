@@ -28,7 +28,7 @@ const App = () => {
 
   return (
     <SafeAreaView>
-      <StatusBar barStyle={'light-content'} />
+      <StatusBar barStyle={'dark-content'} />
       <TextInput
         label="Search"
         onChangeText={onChangeSearch}

@@ -20,7 +20,7 @@ function MovieCard(props) {
     <Surface style={styles.cardSurfaceSmall}>
       <View style={styles.photoView}>
         <TouchableOpacity onPress={() => {
-          // navigation.navigate('ResultDetails', { images: displayImages, disease });
+          // navigation.navigate('MovieDetails', { movie: movie });
         }}>
           <View style={styles.headerView}>
             <View>
