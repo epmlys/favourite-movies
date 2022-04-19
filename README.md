@@ -12,4 +12,4 @@ How to run:
 Screenshot
 ----------
 
-![Simulator Screen Shot - iPhone 13 - 2022-04-19 at 22 05 49](https://user-images.githubusercontent.com/3533323/164086865-635f9223-b316-4cfb-b5ce-6433d3c540d2.png)
+![Simulator Screen Shot - iPhone 13 - 2022-04-19 at 22 20 14](https://user-images.githubusercontent.com/3533323/164089001-f926bd3c-ed6c-4536-b82e-8c581062a1c3.png)
